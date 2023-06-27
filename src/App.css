@@ -1,0 +1,21 @@
+.banner {
+    background-image: url('hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.animate-gradient {
+  animation: gradientAnimation 1.5s linear infinite;
+  background: linear-gradient(to right, #aaaaaa 20%, #e0e0e0 40%, #aaaaaa 60%);
+  background-size: 200% 100%;
+}
